@@ -1,0 +1,459 @@
+@font-face {
+  font-family: 'Jeongum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff') format('woff');
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+h1 {
+	font-size: 27px;
+	width: 100%;
+}
+
+h4 {
+	@media screen and (min-width: 767px) {
+		font-size: 22px;
+	}
+	@media only screen and (min-width: 833px) and (min-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){ 
+    	font-size: 24px;
+    }
+}
+
+p, ul {
+	font-size: 14px;
+	@media screen and (min-width: 360px) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: 767px) {
+		font-size: 18px;
+	}
+}
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover, a:visited, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    outline: none; }
+
+img {
+	width: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+body {
+font-family: "Jeongum", sans-serif;
+color: #313332;
+text-align: center;
+// overflow: hidden;
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	padding: 20% 20px 10%;
+	@media screen and (min-width: 767px) {
+		padding: 80px 60px 60px;
+	}
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	height: auto;
+    }
+}
+
+.wrapper {	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	@media screen and (min-width: 980px) {
+		width: 980px;
+		margin: auto;
+	}
+}
+
+.section-title {
+	padding-bottom: 20px;
+	border-bottom: 3px solid rgb(227, 192, 168);
+	font-weight: 900;
+}
+
+// intro
+
+#intro {
+	background: rgba(#e3c0a8, .1);
+	position: relative;
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	padding: 0 20px;
+    	height: 100vh;
+    }
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-image: url("/images/background.png");
+		background-size: 1400px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		z-index: -1;
+		@media screen and (min-width: 1100px) {
+			background-size: 120%;
+		}
+		@media screen and (max-width: 600px) {
+			background-size: 800px;
+		}
+	}
+
+}
+
+.name_container {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 42%;
+	transform: translate(-50%, -42%);
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	padding: 0 20px;
+    }
+}
+
+.name {
+	margin-left: 6px;
+	letter-spacing: 6px;
+    @media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	font-size: 28px;
+    }
+	@media screen and (min-width: 767px) {
+		font-size: 36px;
+	}
+	@media only screen and (min-width: 833px) and (min-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){ 
+    	font-size: 42px;
+    }
+}
+
+.sub-title {
+	font-size: 20px;
+	letter-spacing: 6px;
+	margin-left: 6px;
+	margin-top: 24px;
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	font-size: 24px;
+    }
+	@media screen and (min-width: 767px) {
+		font-size: 28px;
+	}
+	@media only screen and (min-width: 833px) and (min-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){ 
+    	font-size: 28px;
+    }
+}
+
+.divider {
+	position: absolute;
+	max-width: 120px;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -60%);
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	top: 65%;
+    	transform: translate(-50%, -65%);
+    }
+}
+
+.setting_container {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	bottom: 18%;
+	transform: translateX(-50%);
+	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	bottom: 10%;
+    }
+
+}
+
+.date {
+	margin-bottom: 12px;
+}
+
+.arrow-container {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	animation-name: bounce;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    	display: none;
+    }
+
+}
+
+// info
+
+#main {
+	background: #fff;
+	width: 100%;
+	min-height: 100vh;
+	transition: bottom 1s ease-in-out;
+}
+
+// .arrow-is-clicked {
+// 	overflow: scroll;
+// 	#main {
+// 		bottom: 0vh;
+// 	}
+// }
+
+.paragraph {
+	max-width: 600px;
+	width: 82%;
+	margin: 20% auto 40px;
+	span:nth-of-type(2) {
+		display: block;
+		margin: 8px 0;
+	}
+	@media screen and (min-width: 420px) {
+		br {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 767px) {
+		margin: 60px auto 80px;
+		font-size: 24px;
+		max-width: 500px;
+	}
+
+}
+
+.info_divider {
+	margin: auto;
+	width: 120px;
+}
+
+.info_family {
+	width: calc(50% - 1px);
+	float: left;
+	margin-top: 40px;
+	&.groom {
+		margin-right: 2px;
+	}
+	@media screen and (min-width: 767px) {
+		margin-top: 80px;
+	}
+}
+.info_family_title {
+	background-color: #e1bfa7;
+	padding: 12px 0;
+	color: #fff;
+	font-weight: 800;
+
+}
+
+.info_family_name {
+	padding-top: 20px;
+	font-size: 16px;
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+
+
+//gallery
+#gallery {
+	height: auto;
+	background: rgba(#e3c0a8, .1);
+}
+
+.gallery_photos {
+	margin-top: 24px;
+	div {
+		float: left;
+		margin-bottom: 10px;
+		position: relative;
+		transition: all .4s ease; 
+		&.last {
+			margin-bottom: 0;
+		}
+		&:hover:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,.2);
+		}
+	}
+	@media screen and (min-width: 830px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div {
+			float: none;
+		}
+	}
+}
+
+.horizontal {
+	width: 100%;
+	@media screen and (min-width: 830px) {
+		width: calc(75% - 5px);
+		height: 400px;
+		&.two-third {
+			width: calc(50% - 5px);
+		}
+		&.last {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.vertical {
+	width: calc(50% - 5px);
+	&.odd {
+		margin-right: 10px;
+	}
+	@media screen and (min-width: 830px) {
+		height: 400px;
+		width: calc(25% - 5px);
+		&.odd {
+			margin-right: 0px;
+		}
+		&.one-third {
+			width: calc(25% - 7.5px);
+			// margin-left: 10px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+//where
+.address {
+	margin: 40px 0 20px;
+	@media screen and (min-width: 800px) {
+		margin: 60px 0;
+	}
+}
+
+.address .location {
+	font-weight: 900;
+	margin-bottom: 12px;
+}
+
+.map {
+	width: 100%;
+	img {
+		height: 140px;
+		object-fit: cover;
+
+	}
+	@media screen and (min-width: 767px) {
+		img {
+			height: 250px;
+		}
+	}
+	@media screen and (min-width: 800px) {
+		width: calc(50% - 10px);
+		margin-right: 20px;
+		float: left;
+	}
+}
+
+.transportation {
+	margin-top: 16px;
+	div {
+		margin-bottom: 24px;
+		text-align: left;
+	}
+	p {
+		font-size: 14px;
+	}
+	@media screen and (min-width: 800px) {
+		width: calc(50% - 10px);
+		float: left;
+	}
+}
+
+.transportation_title {
+	font-weight: 800;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.bus p{
+	margin-bottom: 6px;
+}
+
+.busline {
+	font-weight: 800;
+	// display: block;
+	margin-bottom: 6px;
+	&.green {
+		color: #5D7E4C;
+	}
+	&.blue {
+		color: #447BBB;
+	}
+	@media screen and (min-width: 440px) {
+		display: inline-block;
+	}
+}
+
+footer {
+	background-color: #e1bfa7;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+//animation
+
+@keyframes bounce {
+    0%   {bottom:5%;}
+    100%  {bottom:5.5%;}
+    // 100% {bottom:5%;}
+}
+
