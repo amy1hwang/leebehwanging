@@ -83,7 +83,8 @@ text-align: center;
 		padding: 80px 60px 60px;
 	}
 	@media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
-    	height: auto;
+    	height: 100%;
+    	min-height: 100vh;
     }
 }
 
