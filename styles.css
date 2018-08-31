@@ -98,7 +98,7 @@ body {
   @media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #intro {
       padding: 0 20px;
-      height: 100vh; } }
+      height: 90vh; } }
   #intro:after {
     content: "";
     position: absolute;
