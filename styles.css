@@ -253,16 +253,6 @@ body {
     transition: all .4s ease; }
     .gallery_photos div.last {
       margin-bottom: 0; }
-    .gallery_photos div:hover:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.2); }
   @media screen and (min-width: 830px) {
     .gallery_photos {
       display: flex;
