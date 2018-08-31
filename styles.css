@@ -93,11 +93,11 @@ body {
 
 #intro {
   background: rgba(227, 192, 168, 0.1);
-  position: relative; }
+  position: relative;
+  height: 100vh; }
   @media only screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #intro {
-      padding: 0 20px;
-      height: 100vh; } }
+      padding: 0 20px; } }
   #intro:after {
     content: "";
     position: absolute;
